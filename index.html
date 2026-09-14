@@ -5,41 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Grounds and garden maintenance in Elstead, serving South West Surrey. Fixed price quotes, no hourly rates, no surprises. Call or text Freddy on 07887 914287.">
   <title>The Greensman — Garden & Grounds Maintenance, Elstead, Surrey</title>
-  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header class="header">
-    <div class="header-content">
-      <img src="assets/logo.png" alt="The Greensman" class="logo">
-      <nav class="header-nav">
-        <a href="tel:07887914287" class="phone-link">07887 914287</a>
-        <a href="https://wa.me/447887914287" class="whatsapp-link">WhatsApp</a>
+<body class="bg-white">
+  <!-- Header -->
+  <header class="sticky top-0 z-100 bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <img src="assets/logo.png" alt="The Greensman" class="h-10 w-auto">
+      <nav class="flex gap-6">
+        <a href="tel:07887914287" class="text-white text-sm hover:opacity-80">07887 914287</a>
+        <a href="https://wa.me/447887914287" class="text-white text-sm hover:opacity-80">WhatsApp</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <img src="assets/hero.jpg" alt="A client's garden in full summer growth" class="hero-image">
-    <div class="hero-content">
-      <h1>Honest graft. Gardens done properly.</h1>
-      <p class="hero-description">Grounds and garden maintenance across Surrey, run by Freddy — no shortcuts, no waffle, just a genuine pride in the finished result.</p>
-      <div class="hero-ctas">
-        <a href="tel:07887914287" class="btn btn-primary">Call Freddy — 07887 914287</a>
-        <a href="https://wa.me/447887914287" class="btn btn-secondary">WhatsApp instead</a>
+    <!-- Hero Section -->
+  <section class="flex flex-col lg:flex-row items-center gap-10 max-w-6xl mx-auto px-4 py-16">
+    <div class="lg:w-3/5">
+      <h1 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight">Honest graft. Gardens done properly.</h1>
+      <p class="text-lg text-slate-600 mb-8 leading-relaxed">Grounds and garden maintenance across Surrey, run by Freddy — no shortcuts, no waffle, just a genuine pride in the finished result.</p>
+      <div class="flex flex-col sm:flex-row gap-4 mb-8">
+        <a href="tel:07887914287" class="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded text-center">Call Freddy — 07887 914287</a>
+        <a href="https://wa.me/447887914287" class="border-2 border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white font-semibold py-3 px-6 rounded text-center transition">WhatsApp instead</a>
       </div>
-      <ul class="hero-benefits">
-        <li>Fully insured</li>
-        <li>Locally owned</li>
-        <li>Free quotes</li>
+      <ul class="space-y-2 text-slate-700">
+        <li class="flex items-center"><span class="text-orange-600 font-bold mr-2">✓</span>Fully insured</li>
+        <li class="flex items-center"><span class="text-orange-600 font-bold mr-2">✓</span>Locally owned</li>
+        <li class="flex items-center"><span class="text-orange-600 font-bold mr-2">✓</span>Free quotes</li>
       </ul>
+    </div>
+    <div class="lg:w-2/5">
+      <img src="assets/bio.jpg" alt="Freddy, The Greensman" class="rounded-lg w-full h-auto object-cover shadow-lg">
     </div>
   </section>
 
-  <section class="bio">
-    <div class="bio-container">
-      <img src="assets/bio.jpg" alt="Freddy, The Greensman" class="bio-image">
-      <div class="bio-content">
-        <h2>Hi, I'm Freddy</h2>
+    <!-- Bio Section -->
+  <section class="bg-amber-50 py-16 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Hi, I'm Freddy</h2>
+      <div class="space-y-4 text-slate-600 leading-relaxed text-left">
         <p>A 20 year old gardener born and raised in Surrey. I started The Greensman because I believe good work speaks for itself. No shortcuts, no waffle, just honest graft and a genuine pride in the finished result.</p>
         <p>I work with homeowners and estates across Surrey who want someone reliable, hardworking and easy to have around. Whether it's a weekly lawn cut or a full garden transformation, I bring the same attitude to every job — turn up on time, do it properly, leave it better than I found it.</p>
         <p>The Greensman is built on local knowledge, strong values and a simple promise: your garden will be in good hands.</p>
@@ -47,72 +51,85 @@
     </div>
   </section>
 
-  <section class="estate-section">
-    <div class="estate-container">
-      <h2>A passion for estate management</h2>
-      <p>The Greensman is a Surrey-based garden and grounds maintenance service built on hard work, reliability and a genuine love of the outdoors.</p>
-      <p>From private estates to village gardens, we take pride in every job we do.</p>
+  <!-- Estate Section -->
+  <section class="bg-slate-900 text-white py-16 px-4">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-3xl lg:text-4xl font-bold mb-6">A passion for estate management</h2>
+      <div class="space-y-4 text-slate-100 leading-relaxed">
+        <p>The Greensman is a Surrey-based garden and grounds maintenance service built on hard work, reliability and a genuine love of the outdoors.</p>
+        <p>From private estates to village gardens, we take pride in every job we do.</p>
+      </div>
     </div>
   </section>
 
-  <section class="services">
-    <div class="services-container">
-      <h2>Services</h2>
-      <p class="services-intro">From ongoing grounds maintenance to one-off clearances, The Greensman offers a full range of garden services across Surrey. Fixed price quotes, no hourly rates, no surprises.</p>
+  <!-- Services Section -->
+  <section class="bg-amber-50 py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Services</h2>
+      <p class="text-lg text-slate-600 mb-12 max-w-2xl">From ongoing grounds maintenance to one-off clearances, The Greensman offers a full range of garden services across Surrey. Fixed price quotes, no hourly rates, no surprises.</p>
       
-      <div class="service-cards">
-        <div class="service-card"><span class="service-icon">🌱</span>Grounds & Estate Maintenance</div>
-        <div class="service-card"><span class="service-icon">✂️</span>Lawn Care & Mowing</div>
-        <div class="service-card"><span class="service-icon">🏡</span>Garden Clearance & Restoration</div>
-        <div class="service-card"><span class="service-icon">🌿</span>Hedge Trimming & Pruning</div>
-        <div class="service-card"><span class="service-icon">🚫</span>Weed Control</div>
-        <div class="service-card"><span class="service-icon">🌾</span>Scarifying & Seeding</div>
-        <div class="service-card"><span class="service-icon">🪵</span>Mulching</div>
-        <div class="service-card"><span class="service-icon">♻️</span>Garden Waste Removal</div>
-        <div class="service-card"><span class="service-icon">💨</span>Pressure Washing</div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        <div class="bg-white border border-stone-200 rounded-lg p-6 hover:shadow-lg hover:-translate-y-1 transition flex flex-col items-center text-center">
+          <span class="text-4xl mb-3">🌱</span>
+          <p class="font-semibold text-slate-900">Grounds & Estate Maintenance</p>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-lg p-6 hover:shadow-lg hover:-translate-y-1 transition flex flex-col items-center text-center">
+          <span class="text-4xl mb-3">✂️</span>
+          <p class="font-semibold text-slate-900">Lawn Care & Mowing</p>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-lg p-6 hover:shadow-lg hover:-translate-y-1 transition flex flex-col items-center text-center">
+          <span class="text-4xl mb-3">🏡</span>
+          <p class="font-semibold text-slate-900">Garden Clearance & Restoration</p>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-lg p-6 hover:shadow-lg hover:-translate-y-1 transition flex flex-col items-center text-center">
+          <span class="text-4xl mb-3">🌿</span>
+          <p class="font-semibold text-slate-900">Hedge Trimming & Pruning</p>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-lg p-6 hover:shadow-lg hover:-translate-y-1 transition flex flex-col items-center text-center">
+          <span class="text-4xl mb-3">🚫</span>
+          <p class="font-semibold text-slate-900">Weed Control</p>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-lg p-6 hover:shadow-lg hover:-translate-y-1 transition flex flex-col items-center text-center">
+          <span class="text-4xl mb-3">🌾</span>
+          <p class="font-semibold text-slate-900">Scarifying & Seeding</p>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-lg p-6 hover:shadow-lg hover:-translate-y-1 transition flex flex-col items-center text-center">
+          <span class="text-4xl mb-3">🪵</span>
+          <p class="font-semibold text-slate-900">Mulching</p>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-lg p-6 hover:shadow-lg hover:-translate-y-1 transition flex flex-col items-center text-center">
+          <span class="text-4xl mb-3">♻️</span>
+          <p class="font-semibold text-slate-900">Garden Waste Removal</p>
+        </div>
+        <div class="bg-white border border-stone-200 rounded-lg p-6 hover:shadow-lg hover:-translate-y-1 transition flex flex-col items-center text-center">
+          <span class="text-4xl mb-3">💨</span>
+          <p class="font-semibold text-slate-900">Pressure Washing</p>
+        </div>
       </div>
 
-      <p class="services-cta">Not sure what you need? <a href="tel:07887914287" class="cta-link">Get in touch</a> and I'll come and have a look.</p>
+      <p class="text-center text-slate-600">Not sure what you need? <a href="tel:07887914287" class="text-orange-600 font-semibold hover:underline">Get in touch</a> and I'll come and have a look.</p>
     </div>
   </section>
 
-  <section class="testimonials">
-    <div class="testimonials-container">
-      <div class="testimonial-carousel">
-        <div class="testimonial-item">
-          <p class="testimonial-text">"Freddy came highly recommended and with a bit of a reputation to live up to. Arriving promptly on site as arranged, and having discussed the job in hand, Freddy provided a detailed synopsis of the work discussed and a detailed costing for the same. The job was delivered on the promised date to the highest quality. My wife and I are delighted with what Freddy created for us and I'd wholeheartedly recommend Freddy to anyone."</p>
-          <p class="testimonial-author">Peter Krelle, Elstead</p>
-          <div class="testimonial-rating">★★★★★</div>
+    <!-- Testimonials Section -->
+  <section class="bg-white py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+        <div class="bg-amber-50 border border-stone-200 rounded-lg p-6 h-full">
+          <p class="text-slate-700 italic mb-4 leading-relaxed">"Freddy came highly recommended and with a bit of a reputation to live up to. Arriving promptly on site as arranged, and having discussed the job in hand, Freddy provided a detailed synopsis of the work discussed and a detailed costing for the same. The job was delivered on the promised date to the highest quality. My wife and I are delighted with what Freddy created for us and I'd wholeheartedly recommend Freddy to anyone."</p>
+          <p class="font-semibold text-slate-900 mb-2">Peter Krelle, Elstead</p>
+          <div class="text-orange-600">★★★★★</div>
         </div>
-        <div class="testimonial-item">
-          <p class="testimonial-text">"Freddy did a brilliant job. He made sure we were 100% happy before he packed up, and left everywhere very tidy afterwards. Great communication. A really lovely guy."</p>
-          <p class="testimonial-author">Frances Cushway</p>
-          <div class="testimonial-rating">★★★★★</div>
+        <div class="bg-amber-50 border border-stone-200 rounded-lg p-6 h-full">
+          <p class="text-slate-700 italic mb-4 leading-relaxed">"Freddy did a brilliant job. He made sure we were 100% happy before he packed up, and left everywhere very tidy afterwards. Great communication. A really lovely guy."</p>
+          <p class="font-semibold text-slate-900 mb-2">Frances Cushway</p>
+          <div class="text-orange-600">★★★★★</div>
         </div>
-        <div class="testimonial-item">
-          <p class="testimonial-text">"Freddy is very easy, listens and does what you ask and more. Very clean and tidy. ALWAYS on time."</p>
-          <p class="testimonial-author">Tracey Charters</p>
-          <div class="testimonial-rating">★★★★★</div>
+        <div class="bg-amber-50 border border-stone-200 rounded-lg p-6 h-full">
+          <p class="text-slate-700 italic mb-4 leading-relaxed">"Freddy is very easy, listens and does what you ask and more. Very clean and tidy. ALWAYS on time."</p>
+          <p class="font-semibold text-slate-900 mb-2">Tracey Charters</p>
+          <div class="text-orange-600">★★★★★</div>
         </div>
       </div>
     </div>
   </section>
-
-  <footer class="footer">
-    <div class="footer-container">
-      <h2>Get in touch</h2>
-      <p>Based in Elstead, serving South West Surrey. Get in touch for a free fixed price quote.</p>
-      <div class="footer-ctas">
-        <a href="tel:07887914287" class="btn btn-primary">Call — 07887 914287</a>
-        <a href="https://wa.me/447887914287" class="btn btn-secondary">WhatsApp</a>
-      </div>
-      <address>
-        <p>2 Burford Lodge, Burford Lea, Elstead, Surrey GU8 6HU</p>
-        <p>07887 914287</p>
-      </address>
-    </div>
-  </footer>
-
-  <script src="js/testimonials.js"></script>
-</body>
-</html>
