@@ -2,6 +2,8 @@
 
 Website and marketing materials for The Greensman — grounds and estate maintenance, based in Elstead, Surrey.
 
+**Tech stack:** Plain static HTML, CSS, and JavaScript (no framework or build step).
+
 ## Repository Structure
 
 - **`website/`** — Main website code
